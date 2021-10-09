@@ -119,7 +119,7 @@ def request(id_img):
    
     
     #2 - Chargement du meilleur modèle préalablement enregistré dans Azure
-    model_name = 'cityscape-fpn-sm-model-diceloss-efficientnet-imagenet-aug.h5'
+    model_name = 'cityscape-best-model.h5'
     existing_models = os.listdir('./models')
     
     #si le modèle a déjà été chargé on le récupère
