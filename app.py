@@ -58,7 +58,7 @@ def authentication():
             service_principal_id=application_id,
             service_principal_password=svc_pr_password)
 
-    subscription_id = 'dc0050bb-8e50-4b60-8aac-034371ba1a2a'
+    subscription_id = os.environ['AZURE_SUBSCRIPTION_ID']
     resource_group = 'OC-IA-P8-GPU'
     workspace_name = 'WS-IA-P8-GPU'
     ws = Workspace(
